@@ -7,6 +7,12 @@
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
 
+const birthYear = 1996;
+let futureYear = 2026;
+let age = (futureYear - birthYear);
+console.log('I will be either ' + 'ageMax' + age + ' || ' + ' ageMin' + (age - 1));
+
+
 // ## Problem Two
 
 // Snack Supply Calculator:
@@ -16,6 +22,13 @@
 //  * Calculate how many snacks you would eat total, from your current age until the maximum age.
 //  * Log the result to the screen like this: "You will need `snackNumber` to last you until the age of `maxAge`".
 
+let currentAge = 24;
+let maximunAge = 80;
+let snackNumber = 3;
+let totalSnacks = (snackNumber*365) * (maximunAge-currentAge);
+console.log( ' You will need ' + totalSnacks + ' to last you until the age of ' + maximunAge);
+
+
 // ## Problem Three
 
 // Calculate properties of a circle, using the definitions: http://math2.org/math/geometry/circles.htm 
@@ -23,6 +36,12 @@
 //  * Calculate the circumference based on the radius, and log "The circumference is `circumferenceResult`".
 //  * Calculate the area based on the radius, and log "The area is `areaOfCircle`".
 //  * Hint: https://www.w3schools.com/jsref/jsref_pi.asp
+
+let radio = 20
+let circumferenceResult = (2*Math.PI)*radio  
+console.log(' The circumference is ' + circumferenceResult )
+let areaOfCircle = Math.PI*radio*radio
+console.log(' The area is ' + areaOfCircle )
 
 // ## Problem Four
 
@@ -32,6 +51,12 @@
 //  * Now store a fahrenheit temperature into a variable.
 //  * Convert it to celsius and output "`tempInFahrenheit`°F is `tempInCelsius`°C."
 
+let celsius = 50;
+let fahrenheit = (celsius*9/5) + 32;
+console.log(' tempInCelsius ' + celsius + ' is ' + ' tempInFahrenheit ' + fahrenheit);
+fahrenheit = 20
+celsius = (fahrenheit-32) * 5/9
+console.log(' tempInFahrenheit ' + fahrenheit + ' is ' + ' tempInCelsius ' + celsius);
 
 // ## Problem Five
 
@@ -43,6 +68,16 @@
 //  * Store Dee's grade on a test to a variable
 //  * Find the average grade of all students
 //  * Print out if Dee's grade is higher than the class average
+
+let alice = 7
+let bob = 5
+let cam = 3
+let average = (bob + cam + alice) / 3
+console.log(' The averages of all students is ' + average)
+let dee = 9
+average = (bob + cam + alice + dee) / 4
+console.log(' The new average of the all students is ' + average)
+if (dee > average) console.log("Dee's grade is higher than average")
 
 // ## Problem Six
 
@@ -56,6 +91,10 @@
 
 // Hint:
 // Use the remainder % operator.
+
+a = 5846
+let output = a%584
+console.log(output)
 
 
 // ## Problem Seven
@@ -82,6 +121,12 @@
 // * alice + x = y * (bob + x)
 // * Solve for alice
 
+x = 7
+y = 4
+bob = 12
+alice = (y * (bob + x ) - x)
+console.log('The age of alice will be ' + alice)
+
 // ## Problem Eight
 
 // * Cat and Dog Percentages
@@ -94,6 +139,12 @@
 // * Output:
 // * 25% of the daycare animals are cats
 // * 75% of the daycare animals are dogs
+
+let numberOfCats = 100
+let numberOfDogs = 150
+let percentageOfCats = (numberOfCats/(numberOfDogs + numberOfCats)) * 100
+let percentageOfDogs = (numberOfDogs/(numberOfDogs + numberOfCats)) * 100
+console.log(percentageOfCats + '% of the daycare animals are cats and the ' + percentageOfDogs + '% of the daycare animals are dogs')
 
 // ## Problem Nine
 
@@ -118,6 +169,12 @@
 //     let num3 = num1 * num2
 //     console.log(num3)
 //     ```
+//     10
+
+let num1 = 2
+let num2 = 5
+let num3 = num1 *  num2
+console.log(num3)
 
 // b. 
 //     ```js
@@ -125,6 +182,11 @@
 //     str += 'lo'
 //     console.log(str)
 //     ```
+//     jello
+
+let str = 'jel'
+str += 'lo'
+console.log(str)
 
 // c. 
 //     ```js
@@ -133,5 +195,12 @@
 //     let sentence = string + number
 //     console.log(typeof(sentence))
 //     ```
+//     string
+
+let string = 'My favorite number is ';
+let number = 42
+let sentence = string + number
+console.log(typeof(sentence))
+
 
 
